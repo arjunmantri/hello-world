@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author Arjun Mantri
  * @since 1.0
  */
-
-@Controller
+//Need to know only Spring MVC to know for the assignments.
+@Controller //Annotation to declare the dependencies.
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan
+@ComponentScan //all de packages r scanned via dis.
 class HelloConfig {
 
   @RequestMapping(value=Array("/"), method=Array(RequestMethod.GET))
