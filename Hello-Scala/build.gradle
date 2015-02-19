@@ -1,14 +1,14 @@
 
 buildscript {
     repositories {
-	    maven { url "http://repo.spring.io/release" }
+	    maven { url "http://repo.spring.io/release" } //old version of gradle and based on XML.
             mavenCentral()
-	    mavenLocal()
+	    mavenLocal() //once you build first stores into local and fetch from local
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.6.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.6.RELEASE") //spring boot gradle plugin
     }
-}
+} //gradle idea:idea (command used to generate and fill all the dependencies)
 
 apply plugin: 'java'
 apply plugin: 'scala'
